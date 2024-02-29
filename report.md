@@ -1,5 +1,5 @@
 target:https://gitee.com/linping0124/lazy_bk version: v3.1.3   
-There is a serious vulnerability in the fastCMS system. This vulnerability may lead to sensitive information leakage, code execution, GetShell, and other issues.  
+There is a serious vulnerability in the lazy_bk system. This vulnerability may lead to sensitive information leakage, code execution, GetShell, and other issues.  
 There is a Server Side Template Injection vulnerability in the editing function of the theme management menu in the system.  
 <img width="415" alt="image" src="https://github.com/biantaibao/lazy_bk_Sever-side-Template-injection/assets/131763503/bfbf3ed1-a6da-4a24-a23e-e9c2848224f2">  
 However, there is some filtering involved, and using a regular payload will not trigger this vulnerability. We use fastJSON to assist in obtaining ScriptEngine Manager, and then execute any JavaScript code to achieve RCE. The payload is as follows:  
